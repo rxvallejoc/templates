@@ -1,0 +1,37 @@
+<HTML>
+<BODY>
+Titulo <b>$titulo</b>
+<br />
+Titulo Pagina <i>$tituloPagina</i>
+<table>
+	<tr>
+        <td>
+          Fecha
+        </td>
+        <td>
+          Nombre
+        </td>
+        <td>
+          Cantidad
+        </td>
+        <td>
+          Precio
+        </td>
+      </tr>
+#foreach($d in $detalles)
+      <tr>
+        <td>
+          $d.fechaString
+        </td>
+        <td>
+          $d.nombre
+        </td>
+        <td>
+          $d.cantidad
+        </td>
+        <td>
+          $d.precio
+        </td>
+      </tr>
+#end
+</table>
